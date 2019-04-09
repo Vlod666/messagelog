@@ -39,6 +39,10 @@
                     time INT UNSIGNED,            
                     message VARCHAR(4096),            
                     INDEX(auth(6))');
+					
+		if (!file_exists('images')) {
+			mkdir('images', 0777, true);
+}
         ?>
   <br>...done.
   </body> 
